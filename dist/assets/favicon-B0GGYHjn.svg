@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Sanaf and Thoofa monogram">
+  <rect width="128" height="128" rx="28" fill="#fffaf0"/>
+  <path d="M20 96V54c0-25 20-42 44-42s44 17 44 42v42" fill="none" stroke="#b8903d" stroke-width="5"/>
+  <path d="M31 96V56c0-18 15-32 33-32s33 14 33 32v40" fill="none" stroke="#e5c878" stroke-width="2"/>
+  <text x="64" y="65" text-anchor="middle" font-family="Georgia, serif" font-size="34" fill="#132c27">S</text>
+  <text x="64" y="87" text-anchor="middle" font-family="Georgia, serif" font-size="22" fill="#b88a44">&amp;</text>
+  <text x="64" y="110" text-anchor="middle" font-family="Georgia, serif" font-size="34" fill="#132c27">T</text>
+</svg>

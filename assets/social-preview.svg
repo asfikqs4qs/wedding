@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="Sanaf and Thoofa wedding invitation preview">
+  <rect width="1200" height="630" fill="#0a3f35"/>
+  <path d="M0 0h1200v630H0z" fill="none"/>
+  <path d="M130 528V278c0-145 210-215 470-215s470 70 470 215v250" fill="#fffaf0" stroke="#e5c878" stroke-width="8"/>
+  <path d="M178 510V296c0-112 188-178 422-178s422 66 422 178v214" fill="none" stroke="#b8903d" stroke-width="3"/>
+  <text x="600" y="190" text-anchor="middle" font-family="Georgia, serif" font-size="34" fill="#b8903d" letter-spacing="7">WEDDING INVITATION</text>
+  <text x="600" y="320" text-anchor="middle" font-family="Georgia, serif" font-size="100" fill="#132c27">Sanaf &amp; Thoofa</text>
+  <text x="600" y="400" text-anchor="middle" font-family="Georgia, serif" font-size="38" fill="#334139">Friday, 4th September 2026</text>
+  <text x="600" y="462" text-anchor="middle" font-family="Georgia, serif" font-size="34" fill="#334139">Lee Meridian, Sainthamaruthu</text>
+  <text x="600" y="525" text-anchor="middle" font-family="Georgia, serif" font-size="30" fill="#b8903d">Walima: Monday, 7th September 2026</text>
+</svg>

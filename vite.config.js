@@ -5,4 +5,9 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineConfig({
   base: "./",
   plugins: [react(), tailwindcss()],
+  build: {
+    rollupOptions: {
+      input: new URL("./app.html", import.meta.url).pathname,
+    },
+  },
 });
