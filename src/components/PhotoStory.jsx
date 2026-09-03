@@ -25,8 +25,8 @@ export default function PhotoStory() {
           viewport={{ once: true, amount: 0.25 }}
           transition={{ duration: 0.9 }}
         >
-          <ImageWithFallback src={wedding.gallery[0]} alt={`${wedding.groom} and ${wedding.bride} wedding portrait placeholder`} className="portrait-mask main-photo" />
-          <ImageWithFallback src={wedding.gallery[1]} alt="Wedding detail placeholder" className="portrait-mask accent-photo" />
+          <ImageWithFallback src={wedding.gallery[2]} alt={`${wedding.groom} and ${wedding.bride} outdoor wedding portrait`} className="portrait-mask main-photo" />
+          <ImageWithFallback src={wedding.gallery[3]} alt="Walima decor with florals and lanterns" className="portrait-mask accent-photo" />
           <FloralCorner corner="bottom-right" />
         </motion.div>
       </div>

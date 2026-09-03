@@ -54,10 +54,10 @@ export const wedding = {
   socialPreviewImage: "/assets/social-preview.svg",
 
   gallery: [
+    "/assets/engagement-ring-no-face.png",
     "/assets/muslim-couple-portrait.png",
-    "/assets/muslim-couple-portrait.png",
-    "/assets/social-preview.svg",
-    "/assets/muslim-couple-portrait.png",
+    "/assets/couple-1.jpg",
+    "/assets/walima-decor-detail.png",
   ],
 
   familyInvitationText:

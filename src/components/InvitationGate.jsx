@@ -55,7 +55,7 @@ export default function InvitationGate({ onOpen, reducedMotion }) {
             <div className="gate-photo-wrap">
               <ImageWithFallback
                 src={wedding.gallery[0]}
-                alt={`${wedding.groom} and ${wedding.bride} wedding couple portrait`}
+                alt="Faceless Muslim engagement ring detail"
                 className="gate-photo"
                 loading="eager"
               />

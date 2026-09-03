@@ -21,7 +21,7 @@ export default function WeddingHero() {
           transition={{ duration: 0.75, ease: "easeOut" }}
         >
           <ImageWithFallback
-            src={wedding.gallery[0]}
+            src={wedding.gallery[1]}
             alt={`${wedding.groom} and ${wedding.bride} wedding couple portrait`}
             className="hero-main-photo"
             loading="eager"

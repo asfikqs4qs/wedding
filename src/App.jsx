@@ -21,7 +21,6 @@ import WeddingHero from "./components/WeddingHero";
 import { wedding } from "./data/wedding";
 import { useAudio } from "./hooks/useAudio";
 import { useReducedMotion } from "./hooks/useReducedMotion";
-import { useSmoothScroll } from "./hooks/useSmoothScroll";
 
 export default function App() {
   const [loading, setLoading] = useState(true);
@@ -29,8 +28,6 @@ export default function App() {
   const [showSite, setShowSite] = useState(false);
   const reducedMotion = useReducedMotion();
   const music = useAudio(wedding.musicFile);
-
-  useSmoothScroll(showSite && !reducedMotion);
 
   useEffect(() => {
     const frame = window.requestAnimationFrame(() => setLoading(false));

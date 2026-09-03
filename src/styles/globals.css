@@ -1579,6 +1579,10 @@ main:focus-visible {
     padding-bottom: calc(6.75rem + env(safe-area-inset-bottom));
   }
 
+  .floating-bubbles {
+    display: none;
+  }
+
   .gate-stage {
     width: min(94vw, 26rem);
   }
@@ -1685,6 +1689,8 @@ main:focus-visible {
     gap: 0.02rem;
     transform: none;
     touch-action: auto;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
   }
 
   .music-control {
@@ -1692,6 +1698,8 @@ main:focus-visible {
     right: 0.75rem;
     width: 2.45rem;
     height: 2.45rem;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
   }
 
   .floating-nav a {
