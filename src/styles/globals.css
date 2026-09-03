@@ -31,9 +31,10 @@
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
-  overscroll-behavior-y: none;
+  overflow-y: auto;
   scroll-padding-top: 5.25rem;
   scroll-padding-bottom: 6.5rem;
+  -webkit-overflow-scrolling: touch;
 }
 
 body {
@@ -41,7 +42,9 @@ body {
   min-height: 100svh;
   margin: 0;
   overflow-x: hidden;
-  overscroll-behavior-y: none;
+  overflow-y: auto;
+  touch-action: auto;
+  -webkit-overflow-scrolling: touch;
   background:
     radial-gradient(circle at 15% 8%, rgba(18, 107, 104, 0.18), transparent 24rem),
     radial-gradient(circle at 88% 18%, rgba(231, 116, 97, 0.22), transparent 24rem),
@@ -51,6 +54,7 @@ body {
 
 button,
 a {
+  touch-action: manipulation;
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -142,7 +146,8 @@ main:focus-visible {
 .footer-section {
   position: relative;
   isolation: isolate;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: visible;
 }
 
 .invitation-gate {
@@ -919,6 +924,7 @@ main:focus-visible {
   box-shadow: var(--soft-shadow);
   transform: translateX(-50%);
   backdrop-filter: blur(18px);
+  touch-action: manipulation;
 }
 
 .floating-nav a {
@@ -932,6 +938,7 @@ main:focus-visible {
   padding: 0.55rem 0.28rem;
   text-align: center;
   text-decoration: none;
+  touch-action: manipulation;
 }
 
 .floating-nav a:hover {
@@ -1552,6 +1559,15 @@ main:focus-visible {
 }
 
 @media (max-width: 760px) {
+  html,
+  body {
+    height: auto;
+    min-height: 100%;
+    overflow-y: auto;
+    overscroll-behavior-y: auto;
+    touch-action: auto;
+  }
+
   body {
     background:
       radial-gradient(circle at 20% 8%, rgba(15, 93, 85, 0.14), transparent 15rem),
@@ -1596,7 +1612,7 @@ main:focus-visible {
   .hero-section {
     min-height: auto;
     place-items: start center;
-    padding: calc(4.65rem + env(safe-area-inset-top)) 1rem calc(7.25rem + env(safe-area-inset-bottom));
+    padding: clamp(1.3rem, 5vw, 2rem) 1rem calc(7.25rem + env(safe-area-inset-bottom));
   }
 
   .hero-section--immersive {
@@ -1659,15 +1675,20 @@ main:focus-visible {
   }
 
   .floating-nav {
+    position: sticky;
     top: max(0.65rem, env(safe-area-inset-top));
     bottom: auto;
+    left: auto;
     width: min(calc(100vw - 1rem), 27rem);
+    margin: 0.65rem auto 0;
     padding: 0.34rem;
     gap: 0.02rem;
+    transform: none;
+    touch-action: auto;
   }
 
   .music-control {
-    top: calc(3.8rem + env(safe-area-inset-top));
+    top: calc(4.15rem + env(safe-area-inset-top));
     right: 0.75rem;
     width: 2.45rem;
     height: 2.45rem;
