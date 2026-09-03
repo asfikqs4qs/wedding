@@ -35,12 +35,12 @@ export function buildCalendarEvent(wedding) {
   const title = `${wedding.groom} & ${wedding.bride} Wedding`;
   const location = [wedding.venueName, wedding.venueAddress].filter(Boolean).join(", ");
   const description = [wedding.invitationMessage, wedding.googleMapsUrl].filter(Boolean).join("\n");
-  const uid = `safran-afnan-wedding-${wedding.date}@wedding-invitation`;
+  const uid = `${wedding.groom}-${wedding.bride}-wedding-${wedding.date}@wedding-invitation`.toLowerCase();
   const now = formatDateTime(new Date());
   const lines = [
     "BEGIN:VCALENDAR",
     "VERSION:2.0",
-    "PRODID:-//Safran Afnan Wedding//Invitation//EN",
+    `PRODID:-//${wedding.groom} ${wedding.bride} Wedding//Invitation//EN`,
     "CALSCALE:GREGORIAN",
     "METHOD:PUBLISH",
     "BEGIN:VEVENT",
@@ -76,7 +76,7 @@ export function downloadCalendar(wedding) {
   const url = URL.createObjectURL(blob);
   const link = document.createElement("a");
   link.href = url;
-  link.download = "safran-afnan-wedding.ics";
+  link.download = `${wedding.groom}-${wedding.bride}-wedding.ics`.toLowerCase();
   document.body.appendChild(link);
   link.click();
   link.remove();

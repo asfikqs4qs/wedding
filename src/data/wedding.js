@@ -1,57 +1,65 @@
-// Update this single file when the remaining wedding details are confirmed.
-// Keep date as 2026-09-22 unless the confirmed wedding date itself changes.
 export const wedding = {
-  groom: "Safran",
-  bride: "Afnan",
+  groom: "Sanaf",
+  bride: "Thoofa",
 
-  date: "2026-09-22",
-  displayDate: "Tuesday, September 22, 2026",
+  date: "2026-09-04",
+  displayDate: "Friday, 4th September 2026",
 
-  day: "Tuesday",
+  day: "Friday",
   month: "September",
-  dateNumber: "22",
+  dateNumber: "4",
   year: "2026",
 
-  // Use 24-hour time such as "18:30". Leave empty until confirmed.
-  time: "",
-  endTime: "",
+  time: "16:20",
+  displayTime: "04:20 PM",
+  endTime: "19:20",
 
   hijriDate: "",
 
-  venueName: "Pottuvil",
-  venueAddress: "Eastern Province, Sri Lanka",
+  venueName: "Lee Meridian",
+  venueAddress: "Sainthamaruthu",
 
   latitude: null,
   longitude: null,
 
-  googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Pottuvil%2C%20Sri%20Lanka",
+  googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Lee%20Meridian%2C%20Sainthamaruthu",
   mapEmbedUrl: "",
 
-  // Use international format for WhatsApp, digits only, such as "94771234567".
-  rsvpPhone: "",
-  whatsappNumber: "",
-
-  // Optional ISO-like local values, such as "2026-09-22T18:30".
-  calendarStart: "",
-  calendarEnd: "",
+  calendarStart: "2026-09-04T16:20",
+  calendarEnd: "2026-09-04T19:20",
 
   invitationMessage:
-    "We would be honoured by your presence as we begin this beautiful new chapter together.",
+    "Two souls, one beautiful journey, united in love and faith by the blessings of Allah.",
 
-  rsvpMessage:
-    "Assalamu Alaikum Safran & Afnan, In Sha Allah I will be attending your wedding. May Allah bless your new journey together.",
+  groomParents: "Mr. Yareen Bawa (Baseer) & Mrs. Thahira",
+  brideParents: "Al-Haj AMA. Raheem & Hajiyami. Ul. Lalla",
+
+  walima: {
+    title: "Walima Invitation",
+    date: "2026-09-07",
+    displayDate: "Monday, 7th September 2026",
+    day: "Monday",
+    month: "September",
+    dateNumber: "7",
+    year: "2026",
+    time: "After Isha Prayer",
+    venueName: "Lee Meridian",
+    venueAddress: "Sainthamaruthu",
+    message:
+      "We cordially invite you to grace the auspicious occasion of the Walima Reception, Insha Allah.",
+  },
 
   musicFile: "/assets/harris_jayaraj.mp3",
 
-  socialPreviewImage: "/assets/wedding-preview.jpg",
+  socialPreviewImage: "/assets/social-preview.svg",
 
   gallery: [
-    "/assets/couple-1.jpg",
-    "/assets/couple-2.jpg",
-    "/assets/wedding-detail.jpg",
-    "/assets/mosque.jpg",
+    "/assets/muslim-couple-portrait.png",
+    "/assets/muslim-couple-portrait.png",
+    "/assets/social-preview.svg",
+    "/assets/muslim-couple-portrait.png",
   ],
 
   familyInvitationText:
-    "Together with our families, we request the honour of your presence.",
+    "Mr. Yareen Bawa (Baseer) & Mrs. Thahira warmly invite you and your family to grace the blessed wedding celebration of their beloved son.",
 };

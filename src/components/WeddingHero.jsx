@@ -36,10 +36,14 @@ export default function WeddingHero() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.75, delay: 0.12, ease: "easeOut" }}
         >
-          <p className="arabic bismillah" dir="rtl">بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ</p>
-          <p className="small-blessing">With the blessings of Allah</p>
+          <p className="arabic bismillah" dir="rtl">
+            بسم الله الرحمن الرحيم
+          </p>
+          <p className="small-blessing">
+            In the Name of Allah, The Most Gracious, The Most Merciful
+          </p>
           <GoldDivider />
-          <p className="eyebrow">The Nikah &amp; Wedding Of</p>
+          <p className="eyebrow">The Wedding Ceremony Of</p>
           <h2 className="couple-names couple-names--hero">
             <span>{wedding.groom}</span>
             <strong>&amp;</strong>
@@ -47,11 +51,13 @@ export default function WeddingHero() {
           </h2>
           <p className="hero-date">
             <span>{wedding.day}</span>
-            <strong>{wedding.month} {wedding.dateNumber}, {wedding.year}</strong>
+            <strong>
+              {wedding.month} {wedding.dateNumber}, {wedding.year}
+            </strong>
           </p>
           <p className="location-chip">
             <MapPin size={17} aria-hidden="true" />
-            Pottuvil, Sri Lanka
+            {wedding.venueName}, {wedding.venueAddress}
           </p>
           <p className="invitation-line">{wedding.invitationMessage}</p>
         </motion.div>

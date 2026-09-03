@@ -2,8 +2,8 @@ const links = [
   ["Home", "home"],
   ["Invitation", "invitation"],
   ["Date", "date"],
+  ["Walima", "walima"],
   ["Location", "location"],
-  ["RSVP", "rsvp"],
 ];
 
 export default function FloatingNavigation() {

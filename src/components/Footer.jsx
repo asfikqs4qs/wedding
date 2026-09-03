@@ -8,12 +8,17 @@ export default function Footer() {
     <footer className="footer-section">
       <FloralCorner corner="top-left" />
       <WeddingMonogram />
-      <h2>{wedding.groom} &amp; {wedding.bride}</h2>
-      <p className="arabic" dir="rtl">إِنْ شَاءَ الله</p>
+      <h2>
+        {wedding.groom} &amp; {wedding.bride}
+      </h2>
+      <p className="arabic" dir="rtl">
+        إن شاء الله
+      </p>
       <GoldDivider />
       <p>With Love &amp; Duas</p>
-      <p>We can't wait to celebrate this beautiful day with you.</p>
+      <p>We can't wait to celebrate these blessed occasions with you.</p>
       <strong>{wedding.displayDate}</strong>
+      <span>{wedding.walima.displayDate}</span>
       <span>{wedding.familyInvitationText}</span>
     </footer>
   );

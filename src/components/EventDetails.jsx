@@ -19,11 +19,12 @@ export default function EventDetails() {
     <section className="details-section ceremonial-section">
       <div className="section-inner">
         <p className="eyebrow">Save The Date</p>
+        <h2 className="section-title">Wedding Ceremony</h2>
         <div className="details-grid">
           <DetailItem icon={CalendarDays} label="Date">
-            {wedding.day}<br />{wedding.month} {wedding.dateNumber}, {wedding.year}
+            {wedding.displayDate}
           </DetailItem>
-          {wedding.time && <DetailItem icon={Clock} label="Time">{wedding.time}</DetailItem>}
+          {wedding.time && <DetailItem icon={Clock} label="Time">{wedding.displayTime || wedding.time}</DetailItem>}
           {wedding.venueName && <DetailItem icon={MapPin} label="Venue">{wedding.venueName}</DetailItem>}
           {wedding.venueAddress && <DetailItem icon={Navigation} label="Location">{wedding.venueAddress}</DetailItem>}
         </div>

@@ -21,8 +21,8 @@ export default function InvitationGate({ onOpen, reducedMotion }) {
       className={`invitation-gate ${opening ? "invitation-gate--opening" : ""}`}
       initial={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      transition={{ duration: reducedMotion ? 0.2 : 0.55, delay: reducedMotion ? 0.2 : 1.22 }}
-      aria-label="Closed wedding invitation for Safran and Afnan"
+      transition={{ duration: reducedMotion ? 0.2 : 0.45, delay: reducedMotion ? 0.1 : 0.15 }}
+      aria-label={`Closed wedding invitation for ${wedding.groom} and ${wedding.bride}`}
     >
       <div className="silk-light" />
       <div className="color-aura color-aura--coral" aria-hidden="true" />

@@ -15,8 +15,8 @@ export default function PhotoStory() {
           transition={{ duration: 0.8 }}
         >
           <p className="eyebrow">A Beautiful Beginning</p>
-          <h2>A quiet, elegant celebration of love, family, and duas.</h2>
-          <p>Layered with warm candlelight, gentle florals, and the promise of a blessed new journey.</p>
+          <h2>A blessed celebration of love, family, and duas.</h2>
+          <p>Designed in emerald, pearl, and champagne gold for a fresh new invitation theme.</p>
         </motion.div>
         <motion.div
           className="photo-composition"
@@ -25,7 +25,7 @@ export default function PhotoStory() {
           viewport={{ once: true, amount: 0.25 }}
           transition={{ duration: 0.9 }}
         >
-          <ImageWithFallback src={wedding.gallery[0]} alt="Safran and Afnan wedding portrait placeholder" className="portrait-mask main-photo" />
+          <ImageWithFallback src={wedding.gallery[0]} alt={`${wedding.groom} and ${wedding.bride} wedding portrait placeholder`} className="portrait-mask main-photo" />
           <ImageWithFallback src={wedding.gallery[1]} alt="Wedding detail placeholder" className="portrait-mask accent-photo" />
           <FloralCorner corner="bottom-right" />
         </motion.div>

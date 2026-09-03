@@ -15,7 +15,7 @@ export default function LocationSection() {
           <span className="place-kicker">Wedding Location</span>
           <h2>{hasVenue ? wedding.venueName || "Wedding Venue" : "Venue details will be shared soon"}</h2>
           {wedding.venueAddress && <p>{wedding.venueAddress}</p>}
-          <p className="pottuvil-line">Celebrate with us in Pottuvil, surrounded by family, light, and duas.</p>
+          <p className="location-line">Celebrate with us at Lee Meridian, Sainthamaruthu, surrounded by family, light, and duas.</p>
           <div className="button-row">
             {directionsUrl ? (
               <>
@@ -46,8 +46,8 @@ export default function LocationSection() {
           ) : (
             <div className="map-placeholder" aria-label="Wedding location placeholder">
               <MapPin size={38} aria-hidden="true" />
-              <strong>Pottuvil</strong>
-              <span>Sri Lanka</span>
+              <strong>Lee Meridian</strong>
+              <span>Sainthamaruthu</span>
             </div>
           )}
         </div>

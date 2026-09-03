@@ -14,9 +14,9 @@ import LoadingScreen from "./components/LoadingScreen";
 import LocationSection from "./components/LocationSection";
 import MusicControl from "./components/MusicControl";
 import PhotoStory from "./components/PhotoStory";
-import RSVPSection from "./components/RSVPSection";
 import ScrollProgress from "./components/ScrollProgress";
 import ShareInvitation from "./components/ShareInvitation";
+import WalimaDetails from "./components/WalimaDetails";
 import WeddingHero from "./components/WeddingHero";
 import { wedding } from "./data/wedding";
 import { useAudio } from "./hooks/useAudio";
@@ -46,7 +46,7 @@ export default function App() {
       window.requestAnimationFrame(() => {
         document.querySelector("main")?.focus({ preventScroll: true });
       });
-    }, reducedMotion ? 250 : 1450);
+    }, reducedMotion ? 250 : 950);
   };
 
   return (
@@ -85,9 +85,9 @@ export default function App() {
             <PhotoStory />
             <DuaSection />
             <EventDetails />
+            <WalimaDetails />
             <LocationSection />
             <ShareInvitation />
-            <RSVPSection />
           </main>
           <Footer />
         </motion.div>

@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { wedding } from "../data/wedding";
 import GoldDivider from "./GoldDivider";
 
 export default function InvitationMessage() {
@@ -12,9 +13,24 @@ export default function InvitationMessage() {
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
         <p className="eyebrow">A New Chapter</p>
-        <h2>Two hearts.<br />One beautiful promise.<br />A lifetime written by Allah.</h2>
+        <h2>
+          {wedding.groom}
+          <br />
+          with
+          <br />
+          {wedding.bride}
+        </h2>
         <GoldDivider />
-        <p className="editorial-text">With gratitude in our hearts,<br />we invite you to share in the happiness<br />of our Nikah and wedding celebration.</p>
+        <p className="editorial-text">
+          With hearts filled with gratitude to Allah,
+          <br />
+          {wedding.groomParents}
+          <br />
+          warmly invite you and your family to grace the blessed wedding celebration of their beloved son.
+        </p>
+        <p className="editorial-text">
+          {wedding.bride} is the daughter of {wedding.brideParents}.
+        </p>
       </motion.div>
     </section>
   );

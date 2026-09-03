@@ -1,21 +1,21 @@
 @import "tailwindcss";
 
 :root {
-  --ivory: #fff9ef;
-  --cream: #f6e8d5;
-  --champagne: #e8d0a9;
-  --blush: #e9c6b7;
-  --rose: #c99d87;
-  --coral: #e77461;
-  --teal: #126b68;
-  --emerald: #0f5a45;
-  --amber: #f2ad4b;
-  --gold: #b88a44;
-  --gold-light: #ddba72;
-  --brown: #493321;
-  --espresso: #2e2018;
-  --shadow: 0 24px 80px rgba(73, 51, 33, 0.18);
-  --soft-shadow: 0 16px 50px rgba(73, 51, 33, 0.12);
+  --ivory: #fffaf0;
+  --cream: #f2ead8;
+  --champagne: #e6d3a4;
+  --blush: #d7e3d7;
+  --rose: #86a892;
+  --coral: #668f86;
+  --teal: #0f5d55;
+  --emerald: #0a3f35;
+  --amber: #cfaa55;
+  --gold: #b8903d;
+  --gold-light: #e5c878;
+  --brown: #334139;
+  --espresso: #132c27;
+  --shadow: 0 24px 80px rgba(10, 63, 53, 0.18);
+  --soft-shadow: 0 16px 50px rgba(10, 63, 53, 0.12);
   color: var(--espresso);
   background: var(--ivory);
   font-family: "Montserrat", system-ui, sans-serif;
@@ -757,6 +757,91 @@ main:focus-visible {
   top: 62%;
 }
 
+.geometric-corner {
+  position: absolute;
+  z-index: 5;
+  width: clamp(6rem, 19vw, 11rem);
+  aspect-ratio: 1;
+  pointer-events: none;
+  opacity: 0.78;
+  animation: floralBreath 7s ease-in-out infinite alternate;
+}
+
+.geometric-corner--top-left {
+  top: 0.25rem;
+  left: 0.25rem;
+}
+
+.geometric-corner--bottom-right {
+  right: 0.25rem;
+  bottom: 0.25rem;
+  transform: rotate(180deg);
+}
+
+.geo-line,
+.geo-diamond,
+.geo-dot {
+  position: absolute;
+  display: block;
+}
+
+.geo-line {
+  background: linear-gradient(90deg, var(--gold-light), transparent);
+  transform-origin: left center;
+}
+
+.geo-line-1 {
+  top: 18%;
+  left: 4%;
+  width: 74%;
+  height: 1px;
+}
+
+.geo-line-2 {
+  top: 4%;
+  left: 18%;
+  width: 1px;
+  height: 74%;
+  background: linear-gradient(180deg, var(--gold-light), transparent);
+}
+
+.geo-diamond {
+  width: 22%;
+  aspect-ratio: 1;
+  border: 1px solid rgba(229, 200, 120, 0.78);
+  transform: rotate(45deg);
+  background: rgba(10, 63, 53, 0.1);
+}
+
+.geo-diamond-1 {
+  top: 7%;
+  left: 7%;
+}
+
+.geo-diamond-2 {
+  top: 32%;
+  left: 32%;
+  width: 14%;
+}
+
+.geo-dot {
+  width: 0.45rem;
+  aspect-ratio: 1;
+  border-radius: 999px;
+  background: var(--gold-light);
+  box-shadow: 0 0 20px rgba(229, 200, 120, 0.5);
+}
+
+.geo-dot-1 {
+  top: 18%;
+  left: 52%;
+}
+
+.geo-dot-2 {
+  top: 52%;
+  left: 18%;
+}
+
 .gold-divider {
   display: flex;
   width: min(16rem, 62vw);
@@ -1200,6 +1285,16 @@ main:focus-visible {
   margin-top: 2rem;
 }
 
+.section-title {
+  margin: 0.65rem 0 0;
+  color: var(--espresso);
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(2.3rem, 7vw, 4rem);
+  font-weight: 600;
+  line-height: 1;
+  text-align: center;
+}
+
 .detail-item {
   display: grid;
   gap: 0.65rem;
@@ -1215,6 +1310,84 @@ main:focus-visible {
   font-size: 1.5rem;
   font-weight: 600;
   line-height: 1.2;
+}
+
+.walima-section {
+  background:
+    radial-gradient(circle at 18% 18%, rgba(229, 200, 120, 0.22), transparent 20rem),
+    radial-gradient(circle at 86% 34%, rgba(15, 93, 85, 0.16), transparent 22rem),
+    linear-gradient(135deg, rgba(10, 63, 53, 0.95), rgba(19, 44, 39, 0.98));
+  color: var(--ivory);
+}
+
+.walima-section .eyebrow,
+.walima-section .gold-divider span,
+.walima-section .walima-item svg {
+  color: var(--gold-light);
+}
+
+.walima-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(17rem, 1fr);
+  gap: clamp(1.25rem, 4vw, 3rem);
+  align-items: center;
+}
+
+.walima-copy {
+  text-align: left;
+}
+
+.walima-copy h2 {
+  margin: 0.55rem 0;
+  color: var(--gold-light);
+  font-family: "Great Vibes", cursive;
+  font-size: clamp(3.5rem, 11vw, 7rem);
+  font-weight: 400;
+  line-height: 0.92;
+}
+
+.walima-copy p:not(.eyebrow) {
+  color: rgba(255, 250, 240, 0.88);
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(1.15rem, 3vw, 1.55rem);
+  line-height: 1.55;
+}
+
+.walima-panel {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.walima-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.35rem 0.75rem;
+  align-items: center;
+  min-height: 7rem;
+  padding: 1.1rem;
+  border: 1px solid rgba(229, 200, 120, 0.34);
+  border-radius: 8px;
+  background:
+    linear-gradient(135deg, rgba(255, 250, 240, 0.12), rgba(229, 200, 120, 0.08)),
+    rgba(255, 255, 255, 0.04);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.16);
+}
+
+.walima-item span {
+  color: rgba(229, 200, 120, 0.84);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.walima-item strong {
+  grid-column: 2;
+  color: var(--ivory);
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(1.35rem, 4vw, 1.85rem);
+  font-weight: 600;
+  line-height: 1.18;
 }
 
 .gentle-note {
@@ -1246,7 +1419,7 @@ main:focus-visible {
   text-transform: uppercase;
 }
 
-.pottuvil-line {
+.location-line {
   color: var(--teal) !important;
   font-weight: 600;
 }
@@ -1396,12 +1569,14 @@ main:focus-visible {
 
   .photo-layout,
   .location-layout,
+  .walima-layout,
   .immersive-hero {
     grid-template-columns: 1fr;
   }
 
   .photo-copy,
-  .location-copy {
+  .location-copy,
+  .walima-copy {
     text-align: center;
   }
 

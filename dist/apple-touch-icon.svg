@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180">
-  <rect width="180" height="180" rx="40" fill="#fff9ef"/>
-  <path d="M28 138V76c0-36 28-60 62-60s62 24 62 60v62" fill="none" stroke="#b88a44" stroke-width="8"/>
-  <path d="M46 138V80c0-25 19-44 44-44s44 19 44 44v58" fill="none" stroke="#ddba72" stroke-width="3"/>
-  <text x="90" y="87" text-anchor="middle" font-family="Georgia, serif" font-size="48" fill="#2e2018">S</text>
-  <text x="90" y="116" text-anchor="middle" font-family="Georgia, serif" font-size="28" fill="#b88a44">&amp;</text>
-  <text x="90" y="151" text-anchor="middle" font-family="Georgia, serif" font-size="48" fill="#2e2018">A</text>
+  <rect width="180" height="180" rx="40" fill="#fffaf0"/>
+  <path d="M28 138V76c0-36 28-60 62-60s62 24 62 60v62" fill="none" stroke="#b8903d" stroke-width="8"/>
+  <path d="M46 138V80c0-25 19-44 44-44s44 19 44 44v58" fill="none" stroke="#e5c878" stroke-width="3"/>
+  <text x="90" y="87" text-anchor="middle" font-family="Georgia, serif" font-size="48" fill="#132c27">S</text>
+  <text x="90" y="116" text-anchor="middle" font-family="Georgia, serif" font-size="28" fill="#b8903d">&amp;</text>
+  <text x="90" y="151" text-anchor="middle" font-family="Georgia, serif" font-size="48" fill="#132c27">T</text>
 </svg>
